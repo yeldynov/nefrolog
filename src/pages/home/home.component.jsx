@@ -15,6 +15,7 @@ const Home = () => {
       <Services />
       <Contact />
       <Testimonials />
+      <Footer />
     </Fragment>
   );
 };
