@@ -1,0 +1,85 @@
+section#services {
+  .max-width {
+    max-width: 1300px;
+    padding: 0 200px;
+    margin: auto;
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Forum';
+      color: rgb(0, 0, 0);
+      line-height: 0.45;
+      font-weight: 100;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(26% - 20px);
+    border-radius: 10px;
+    padding: 3px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgb(218, 238, 251);
+    }
+  }
+
+  .box {
+    transition: all 0.3s ease;
+    text-align: center;
+
+    h3 {
+      font-size: 18px;
+      font-family: 'Century Gothic';
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: left;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: 'PT Sans';
+      color: rgb(0, 0, 0);
+      line-height: 1.2;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  section#services {
+    .max-width {
+      padding: 0 25px;
+
+      .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#services {
+    .max-width {
+      padding: 0 25px;
+
+      .card {
+        width: 60%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+section#contact {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 7%,
+    rgb(255, 255, 255) 11%,
+    rgb(255, 255, 255) 12%,
+    rgb(255, 255, 255) 14%,
+    rgb(197, 231, 251) 38%,
+    rgb(138, 207, 246) 100%
+  );
+
+  h1 {
+    font-size: 39px;
+    font-family: 'Forum';
+    color: rgb(255, 254, 254);
+    line-height: 0.462;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 50px;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    // padding: 20px 0px;
+  }
+
+  .contact-box {
+    // max-width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    padding-right: 20px;
+  }
+
+  .left {
+    padding: 25px 40px;
+    background-color: #fff;
+    width: 350px;
+  }
+
+  .right {
+    height: 100%;
+    background: url('../../assets/contact-photo.png') no-repeat right;
+    background-size: contain;
+    width: 520px;
+
+    p {
+      font-size: 18px;
+      font-family: 'Gotham Pro Narrow';
+      color: rgb(71, 132, 168);
+      line-height: 1.48;
+      text-align: left;
+      width: 50%;
+      // padding-left: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 24.687px;
+    font-family: 'Gotham Pro Narrow';
+    color: rgb(71, 132, 168);
+    line-height: 1.48;
+    text-align: center;
+    transform: matrix(0.72911632614664, 0, 0, 0.72911632614664, 0, 0);
+  }
+
+  .circle {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    top: 2766px;
+    width: 39px;
+    height: 39px;
+  }
+
+  .field {
+    width: 80%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      background-color: #fff;
+      border: 2px solid rgba(30, 85, 250, 0.47);
+    }
+  }
+
+  .area {
+    min-height: 150px;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: none;
+
+    background-color: rgb(20, 182, 24);
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.14);
+    width: 176px;
+    height: 56px;
+    text-transform: uppercase;
+
+    font-size: 18px;
+    font-family: 'PT Sans';
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin: auto;
+  }
+}
+
+@media screen and (max-widgh: 880px) {
+  section#contact {
+    .contact-box {
+      grid-template-columns: 1fr;
+    }
+
+    .right {
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+section#testimonials {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 5rem;
+
+  h1 {
+    margin-top: 10rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    font-size: 36px;
+    font-family: 'Forum';
+    color: rgb(0, 0, 0);
+    line-height: 0.5;
+    text-align: center;
+    font-weight: 100;
+  }
+
+  .slider {
+    margin-top: 3rem;
+  }
+
+  .swiper {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 3rem;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
