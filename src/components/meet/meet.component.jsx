@@ -36,6 +36,7 @@ const Meet = () => {
             мережі Інтернет та поспілкуватися, я вирішив відкрити прийом онлайн.
             Це відносто швидко, зручно та ефективно.
           </p>
+          <div className='meet-bottom-line'></div>
         </div>
       </div>
       <div className='bottom-gradient-thick' />

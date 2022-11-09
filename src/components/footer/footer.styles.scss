@@ -7,6 +7,10 @@ section#footer {
   position: relative;
   height: 305px;
 
+  .mobile-politic {
+    display: none;
+  }
+
   .footer-nav {
     position: absolute;
     bottom: 0;
@@ -72,6 +76,59 @@ section#footer {
         margin: 10px;
         margin-top: 0;
         font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#footer {
+    // width: 100%;
+    background-image: linear-gradient(
+      0deg,
+      rgb(115, 153, 214) 0%,
+      rgb(138, 223, 247) 100%
+    );
+    background-size: cover;
+    height: auto;
+
+    .mobile-politic {
+      display: block;
+      font-size: 18px;
+      font-family: 'PT Sans';
+      color: rgb(255, 255, 255);
+      text-decoration: underline;
+      font-variant: small-caps;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .footer-nav {
+      width: 100%;
+      display: none;
+    }
+
+    .bottom-line {
+      padding: 0;
+      display: none;
+    }
+
+    .bottom-content {
+      margin: 0;
+      display: flex;
+      text-align: center;
+      justify-content: baseline;
+      flex-direction: column-reverse;
+      padding-top: 50px;
+
+      .social {
+        margin-right: 0;
+        font-size: 14px;
+      }
+
+      .copy {
+        padding-top: 10px;
+        font-size: 12px;
       }
     }
   }

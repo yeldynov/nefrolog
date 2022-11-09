@@ -11,7 +11,7 @@ section#testimonials {
   margin-top: 5rem;
 
   h1 {
-    margin-top: 10rem;
+    // margin-top: rem;
     text-align: center;
     margin-bottom: 1rem;
 
@@ -49,5 +49,35 @@ section#testimonials {
   .swiper-3d .swiper-slide-shadow-left,
   .swiper-3d .swiper-slide-shadow-right {
     background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#testimonials {
+    margin-top: 3rem;
+    h1 {
+      margin-bottom: -1rem;
+      font-size: 24px;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 3rem;
+      padding-left: auto;
+      padding-right: auto;
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next,
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }

@@ -2,6 +2,7 @@ section#services {
   .max-width {
     max-width: 1300px;
     padding: 0 200px;
+    padding-bottom: 50px;
     margin: auto;
 
     h1 {
@@ -77,8 +78,24 @@ section#services {
       padding: 0 25px;
 
       .card {
-        width: 60%;
+        width: 100%;
         margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+        padding-bottom: 0;
+      }
+
+      h3 {
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      img {
+        scale: 0.6;
       }
     }
   }

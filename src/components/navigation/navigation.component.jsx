@@ -1,45 +1,65 @@
-import { useRef } from 'react';
-import { FaBars, FaTimes, FaPhoneSquareAlt } from 'react-icons/fa';
-
+import { useState } from 'react';
 import './navigation.styles.scss';
 
 const Navigation = () => {
-  const navRef = useRef();
+  const [isActive, setIsActive] = useState(false);
 
-  const showNavbar = (e) => {
-    navRef.current.classList.toggle('responsive_nav');
+  const animateLinks = () => {
+    const navLinks = document.querySelectorAll('.nav-links li');
+    const burger = document.querySelector('.burger');
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) link.style.animation = '';
+      else
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s`;
+    });
+    
+    // burger animation
+    burger.classList.toggle('toggle');
+  };
+
+  const showNavbar = () => {
+    setIsActive(!isActive);
+    animateLinks();
   };
 
   return (
-    <header>
-      <button className='nav-btn' onClick={showNavbar}>
-        <FaBars />
-      </button>
-      <div className='nav-logo'>Нефролог</div>
-      <div className='phone-icon'>
-        <FaPhoneSquareAlt />
+    <nav>
+      <ul className={`${isActive ? 'nav-active' : null} nav-links`}>
+        <li>
+          <a href='#home' onClick={showNavbar}>
+            Головна
+          </a>
+        </li>
+        <li>
+          <a href='#meet' onClick={showNavbar}>
+            Знайомство
+          </a>
+        </li>
+        <li>
+          <a href='#services' onClick={showNavbar}>
+            Послуги
+          </a>
+        </li>
+        <li>
+          <a href='#contact' onClick={showNavbar}>
+            Записатися
+          </a>
+        </li>
+        <li>
+          <a href='#testimonials' onClick={showNavbar}>
+            Відгуки
+          </a>
+        </li>
+      </ul>
+      <div className='burger' onClick={showNavbar}>
+        <div className='line1'></div>
+        <div className='line2'></div>
+        <div className='line3'></div>
       </div>
-      <nav ref={navRef}>
-        <a href='#home' onClick={showNavbar}>
-          Головна
-        </a>
-        <a href='#meet' onClick={showNavbar}>
-          Знайомство
-        </a>
-        <a href='#services' onClick={showNavbar}>
-          Послуги
-        </a>
-        <a href='#contact' onClick={showNavbar}>
-          Записатися
-        </a>
-        <a href='#testimonials' onClick={showNavbar}>
-          Відгуки
-        </a>
-        <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-          <FaTimes />
-        </button>
-      </nav>
-    </header>
+    </nav>
   );
 };
 

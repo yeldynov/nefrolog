@@ -24,6 +24,7 @@
     height: 201px;
     margin-top: -150px;
     width: 75%;
+    margin-left: -10px;
   }
 
   img {
@@ -56,5 +57,59 @@
       -webkit-transform: matrix(0.9945453836979, 0, 0, 1, 0, 0);
       -ms-transform: matrix(0.9945453836979, 0, 0, 1, 0, 0);
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    display: block;
+    padding: 0;
+    // width: 100%;
+  }
+
+  .meet-bottom-line {
+    background-color: rgb(16, 58, 123);
+    width: 57px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .about .about-text {
+    margin: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about .main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 180px;
+  }
+
+  .about .about-text p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .about .about-text h1 {
+    font-size: 30px;
+    font-family: 'Forum';
+    color: rgb(0, 0, 0);
+    line-height: 0.45;
+  }
+
+  .about .bottom-gradient-thick {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about img {
+    width: auto;
   }
 }

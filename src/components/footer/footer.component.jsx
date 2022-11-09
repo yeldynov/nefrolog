@@ -31,6 +31,12 @@ const Footer = () => {
           <i className='bi bi-youtube'></i>
           <i className='bi bi-twitter'></i>
         </div>
+        <div className='mobile-politic'>
+          <p>
+            Політика конфіденційності
+            <br /> Згода на обробку персональних даних
+          </p>
+        </div>
       </div>
     </section>
   );

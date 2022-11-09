@@ -26,7 +26,7 @@ const Testimonials = () => {
         }}
         breakpoints={{
           320: {
-            width: 320,
+            width: 400,
             loop: false,
             slidesPerView: 1,
           },
